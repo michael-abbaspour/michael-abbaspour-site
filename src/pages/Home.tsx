@@ -2,6 +2,7 @@
  * Home page.
  */
 
+import { Link } from "react-router-dom";
 import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";
 import RecentPosts from "../components/blog/RecentPosts";
@@ -32,7 +33,7 @@ export default function Home() {
 									<SiDocker className="default-icon-size docker-icon" />
 								</div>
 								<div className="margin-top-1">
-									<a href="/projects" className={styles.projectsLink}>See What I'm Building</a>
+									<Link to="/projects" className={styles.projectsLink}>See What I'm Building</Link>
 								</div>
 							</div>
 						</div>
