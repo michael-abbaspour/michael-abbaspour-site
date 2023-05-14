@@ -1,0 +1,47 @@
+/**
+FAQs styling.
+ */
+
+.faqWrapper {
+	max-width: 50em;
+}
+
+.faqAccordion {
+	display: flex;
+	flex-direction: column;
+}
+
+.faqAccordionPanel {
+	padding-block: 1rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.faqPanelHeading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.faqAccordionPanel.active {
+
+}
+
+.faqAccordionTrigger {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+.faqAccordionToggleIcon {
+	color: hsl(348, 83%, 47%);
+}
+
+.faqAccordionContent {
+	height: 0;
+	overflow: hidden;
+	transition: height ease 0.2s;
+}
+
+.faqAccordionContent > p {
+	padding-top: 0.25rem;
+}

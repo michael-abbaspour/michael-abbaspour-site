@@ -1,0 +1,47 @@
+/**
+Projects styles.
+ */
+
+.projectsWrapper {
+
+}
+
+.projectItemContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem;
+	border: 1px solid hsl(0, 0%, 87%);
+	background-color: hsl(0, 0%, 100%);
+}
+
+.projectImgContainer {
+
+}
+
+.projectImgContainer > img {
+}
+
+.projectTitleAndContent {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+
+.technologiesList {
+	list-style-type: none;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.sourceCodeLink {
+	cursor: pointer;
+	max-width: 10rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: hsl(210, 100%, 56%);
+	padding: 0.35rem;
+	border-radius: 100vmax;
+	color: hsl(0, 0%, 100%);
+	font-weight: bold;
+	margin-top: auto;
+}

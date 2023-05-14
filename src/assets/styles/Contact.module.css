@@ -1,0 +1,46 @@
+/**
+Contact styles.
+ */
+
+.contactFormWrapper {
+	display: grid;
+	justify-content: center;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+	padding: 2rem;
+	border: 1px solid hsl(0, 0%, 87%);
+}
+
+.textareaWrapper {
+	resize: none;
+}
+
+.contactFormButtonWrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.contactFormButton {
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(16, 100%, 66%);
+	padding: 0.65rem 1rem 0.65rem 1rem;
+	border-radius: 100vmax;
+	font-weight: bold;
+}
+
+/**
+Mobile responsiveness.
+ */
+
+@media screen and (min-width: 547px) {
+	.contactForm {
+		min-width: 30rem;
+	}
+}

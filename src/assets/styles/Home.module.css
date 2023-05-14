@@ -1,0 +1,49 @@
+/**
+Home page component styles.
+ */
+
+.homeTitleContainerWrapper {
+	box-shadow: 0 0 2em rgba(0,0,0,.1);
+	border-radius: 5px;
+}
+
+.homeTitleContainer {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	padding: 2rem;
+}
+
+.homeTitleContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.homeTitleHeading {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.0;
+	text-align: center;
+}
+
+.projectsLink {
+	cursor: pointer;
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(177, 70%, 41%);
+	padding: 0.65rem 1rem 0.65rem 1rem;
+	border-radius: 100vmax;
+	font-weight: bold;
+}
+
+.techStack {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+/****
+Mobile viewports
+ */

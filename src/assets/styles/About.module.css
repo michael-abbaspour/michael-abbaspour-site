@@ -1,0 +1,18 @@
+/**
+About Page styles.
+ */
+
+.aboutMeSection {
+	display: flex;
+	gap: 0.5rem;
+	box-shadow: 0 0 2em rgba(0,0,0,.1);
+}
+
+.aboutMeSection > p {
+	padding: 0.5rem;
+}
+
+.aboutMeImg {
+	height: auto;
+	aspect-ratio: 16/9;
+}

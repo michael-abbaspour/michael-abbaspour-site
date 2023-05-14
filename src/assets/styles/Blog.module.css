@@ -1,0 +1,76 @@
+/**
+Blog styles.
+ */
+
+.blogListWrapper {
+
+}
+
+.blogListGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.blogListItemWrapper {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.2);
+}
+
+.blogListItemThumbnail {
+	width: 100%;
+	object-fit: cover;
+}
+
+.blogListItemContent {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+	background-color: hsl(0, 0%, 100%);
+}
+
+.blogListItemTitle {
+	text-decoration: none;
+	color: hsl(0, 0%, 0%);
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.blogPostHeadingSection {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.blogPostCoverPhoto {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: 100% 0;
+}
+
+.postContentContainer {
+
+}
+
+.postContentSection {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding-bottom: 1rem;
+}
+
+/**********
+Media Resizing and Responsiveness
+ */
+@media screen and (max-width: 547px) {
+	.blogListGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.blogListItemTitle {
+		font-size: 0.85rem;
+	}
+}
