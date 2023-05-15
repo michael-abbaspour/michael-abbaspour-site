@@ -2,6 +2,10 @@
 About Page styles.
  */
 
+.aboutMeTitle {
+	margin-bottom: 0.5rem;
+}
+
 .aboutMeSection {
 	display: flex;
 	gap: 0.5rem;
@@ -13,6 +17,31 @@ About Page styles.
 }
 
 .aboutMeImg {
-	height: auto;
-	aspect-ratio: 16/9;
+	aspect-ratio: 16 / 9;
+}
+
+.faqTitle {
+	margin-bottom: 0.5rem;
+}
+
+/**********
+Media Resizing and Responsiveness
+ */
+@media screen and (max-width: 547px) {
+	.aboutMeTitle {
+		text-align: center;
+	}
+
+	.aboutMeSection {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.aboutMeImg {
+		padding-top: 0.5rem;
+	}
+
+	.faqTitle {
+		text-align: center;
+	}
 }

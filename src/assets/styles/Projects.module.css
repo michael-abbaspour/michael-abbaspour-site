@@ -2,6 +2,11 @@
 Projects styles.
  */
 
+.projectsTitle {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
 .projectsWrapper {
 
 }
@@ -19,6 +24,7 @@ Projects styles.
 }
 
 .projectImgContainer > img {
+
 }
 
 .projectTitleAndContent {
@@ -44,4 +50,17 @@ Projects styles.
 	color: hsl(0, 0%, 100%);
 	font-weight: bold;
 	margin-top: auto;
+}
+
+/**********
+Media Resizing and Responsiveness
+ */
+@media screen and (max-width: 547px) {
+	.projectItemContainer {
+		grid-template-columns: 1fr;
+	}
+
+	.projectTitleAndContent {
+		align-items: center;
+	}
 }

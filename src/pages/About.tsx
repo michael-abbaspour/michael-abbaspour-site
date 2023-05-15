@@ -15,9 +15,9 @@ export default function About() {
 			<Header />
 			<div className="primary-main">
 				<div className="general-container">
-					<h1 className="margin-bottom-half">About Me</h1>
+					<h1 className={styles.aboutMeTitle}>About Me</h1>
 					<section className={styles.aboutMeSection}>
-						<img src={personalImageUrl} alt="Site Author Image." width={200} height={200} />
+						<img src={personalImageUrl} alt="Site Author Image." className={styles.aboutMeImg} width={200} height={200} />
 						<p>
 							Welcome! Thank you for visiting my website and taking the time to learn more about me. My name is Michael Abbaspour, and I am a software developer and tech enthusiast.
 							I began my programming journey in late 2019, transitioning from the landscaping industry, and am entirely self-taught.
@@ -25,7 +25,7 @@ export default function About() {
 						</p>
 					</section>
 					<section className="padding-block-2">
-						<h2>Frequently Asked Questions</h2>
+						<h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
 						<FaqsAccordion />
 					</section>
 				</div>

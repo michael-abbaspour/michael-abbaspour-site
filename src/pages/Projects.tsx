@@ -5,6 +5,7 @@
 import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";
 import ProjectsList from "../components/projects/ProjectsList";
+import styles from "../assets/styles/Projects.module.css";
 
 export default function Projects() {
 	return (
@@ -12,7 +13,7 @@ export default function Projects() {
 			<Header />
 			<div className="primary-main">
 				<div className="general-container">
-					<h1 className="margin-bottom-half">Projects</h1>
+					<h1 className={styles.projectsTitle}>Projects</h1>
 					<ProjectsList />
 				</div>
 			</div>
