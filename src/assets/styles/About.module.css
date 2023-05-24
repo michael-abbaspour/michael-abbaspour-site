@@ -7,13 +7,10 @@ About Page styles.
 }
 
 .aboutMeSection {
-	display: flex;
-	gap: 0.5rem;
+	display: grid;
+	grid-template-columns: 225px 1fr;
+	padding: 1rem;
 	box-shadow: 0 0 2em rgba(0,0,0,.1);
-}
-
-.aboutMeSection > p {
-	padding: 0.5rem;
 }
 
 .aboutMeImg {
@@ -33,12 +30,14 @@ Media Resizing and Responsiveness
 	}
 
 	.aboutMeSection {
-		flex-direction: column;
-		align-items: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: 225px 1fr;
+		justify-content: center;
 	}
 
-	.aboutMeImg {
-		padding-top: 0.5rem;
+	.aboutMeImgSection {
+		display: flex;
+		justify-content: center;
 	}
 
 	.faqTitle {

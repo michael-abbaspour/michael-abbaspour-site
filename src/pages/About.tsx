@@ -17,7 +17,9 @@ export default function About() {
 				<div className="general-container">
 					<h1 className={styles.aboutMeTitle}>About Me</h1>
 					<section className={styles.aboutMeSection}>
-						<img src={personalImageUrl} alt="Site Author Image." className={styles.aboutMeImg} width={200} height={200} />
+						<div className={styles.aboutMeImgSection}>
+							<img src={personalImageUrl} alt="Site Author Image." className={styles.aboutMeImg} width={200} height={200} />
+						</div>
 						<p>
 							Welcome! Thank you for visiting my website and taking the time to learn more about me. My name is Michael Abbaspour, and I am a software developer and tech enthusiast.
 							I began my programming journey in late 2019, transitioning from the landscaping industry, and am entirely self-taught.
