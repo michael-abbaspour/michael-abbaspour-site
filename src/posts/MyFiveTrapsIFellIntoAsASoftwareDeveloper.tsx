@@ -91,12 +91,12 @@ export default function MyFiveTrapsIFellIntoAsASoftwareDeveloper() {
 					I have curated a list of some of the best online content creators that I personally have come across, whom I believe fit the above criterion:
 				</p>
 				<ul className="list-style-type-none">
-					<li>Node.js - <a href="https://www.youtube.com/@Cododev">Cododev</a></li>
-					<li>JavaScript - <a href="https://www.youtube.com/@WebDevSimplified">Web Dev Simplified</a></li>
-					<li>TypeScript - <a href="https://www.youtube.com/@mattpocockuk">Matt Pocock</a></li>
-					<li>System Design - <a href="https://www.youtube.com/@ByteByteGo">ByteByteGo</a></li>
-					<li>PHP - <a href="https://www.youtube.com/@ProgramWithGio">Program With Gio</a></li>
-					<li>CSS - <a href="https://www.youtube.com/@KevinPowell">Kevin Powell</a></li>
+					<li>Node.js - <a href="https://www.youtube.com/@Cododev" target="_blank" rel="noopener noreferrer">Cododev</a></li>
+					<li>JavaScript - <a href="https://www.youtube.com/@WebDevSimplified" target="_blank" rel="noopener noreferrer">Web Dev Simplified</a></li>
+					<li>TypeScript - <a href="https://www.youtube.com/@mattpocockuk" target="_blank" rel="noopener noreferrer">Matt Pocock</a></li>
+					<li>System Design - <a href="https://www.youtube.com/@ByteByteGo" target="_blank" rel="noopener noreferrer">ByteByteGo</a></li>
+					<li>PHP - <a href="https://www.youtube.com/@ProgramWithGio" target="_blank" rel="noopener noreferrer">Program With Gio</a></li>
+					<li>CSS - <a href="https://www.youtube.com/@KevinPowell" target="_blank" rel="noopener noreferrer">Kevin Powell</a></li>
 				</ul>
 			</div>
 			<div className={styles.postContentSection}>

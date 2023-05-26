@@ -34,7 +34,7 @@ export function ProjectListItem({ id, name, imageUrl, imageAltText, description,
 					})}
 				</ul>
 				<p>{description}</p>
-				<a href={sourceCodeUrl} className={styles.sourceCodeLink}>Source Code</a>
+				<a href={sourceCodeUrl} className={styles.sourceCodeLink} target="_blank" rel="noopener noreferrer">Source Code</a>
 			</div>
 		</article>
 	)
