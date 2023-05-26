@@ -14,7 +14,7 @@ About Page styles.
 }
 
 .aboutMeImg {
-	aspect-ratio: 16 / 9;
+
 }
 
 .faqTitle {
@@ -31,8 +31,13 @@ Media Resizing and Responsiveness
 
 	.aboutMeSection {
 		grid-template-columns: 1fr;
-		grid-template-rows: 225px 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		align-items: center;
 		justify-content: center;
+	}
+
+	.aboutMeSection > p {
+		padding-top: 1rem;
 	}
 
 	.aboutMeImgSection {

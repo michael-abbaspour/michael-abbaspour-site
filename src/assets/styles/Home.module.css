@@ -3,8 +3,7 @@ Home page component styles.
  */
 
 .homeTitleContainerWrapper {
-	box-shadow: 0 0 2em rgba(0,0,0,.1);
-	border-radius: 5px;
+
 }
 
 .homeTitleContainer {
@@ -12,9 +11,17 @@ Home page component styles.
 	justify-content: center;
 	gap: 3rem;
 	padding: 2rem;
+	margin-bottom: 5rem;
 }
 
 .homeTitleContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.homeTitleHeadingWrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,6 +32,14 @@ Home page component styles.
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: 1.0;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.homeCaptionHeading {
+	color: hsl(177, 70%, 41%);
+	font-weight: 600;
+	font-size: 1.75rem;
 	text-align: center;
 }
 
@@ -40,10 +55,61 @@ Home page component styles.
 
 .techStack {
 	display: flex;
-	gap: 0.5rem;
+	gap: 2rem;
 	align-items: center;
 }
 
-/****
+.homeIconSizes {
+	width: 30px;
+	height: 30px;
+}
+
+/*************
 Mobile viewports
- */
+ *************/
+@media (min-width: 768px) and (max-width: 992px) {
+	.homeTitleHeading {
+		font-size: 60px;
+	}
+	.homeCaptionHeading {
+		font-size: 35px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+	.homeTitleHeading {
+		font-size: 56px;
+	}
+	.homeCaptionHeading {
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+	.homeTitleHeading {
+		font-size: 32px;
+	}
+	.homeCaptionHeading {
+		font-size: 16px;
+	}
+	.homeIconSizes {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (min-width: 280px) and (max-width: 375px) {
+	.homeTitleHeading {
+		font-size: 26px;
+	}
+	.homeCaptionHeading {
+		font-size: 14px;
+	}
+	.techStack {
+		gap: 1rem;
+	}
+	.homeIconSizes {
+		width: 15px;
+		height: 15px;
+	}
+}

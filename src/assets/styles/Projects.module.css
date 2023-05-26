@@ -17,6 +17,7 @@ Projects styles.
 	padding: 1rem;
 	border: 1px solid hsl(0, 0%, 87%);
 	background-color: hsl(0, 0%, 100%);
+	gap: 1rem;
 }
 
 .projectImgContainer {
@@ -44,7 +45,7 @@ Projects styles.
 	max-width: 10rem;
 	text-align: center;
 	text-decoration: none;
-	background-color: hsl(210, 100%, 56%);
+	background-color: hsl(210, 97%, 42%);
 	padding: 0.35rem;
 	border-radius: 100vmax;
 	color: hsl(0, 0%, 100%);
@@ -62,5 +63,14 @@ Media Resizing and Responsiveness
 
 	.projectTitleAndContent {
 		align-items: center;
+		gap: 1rem;
+	}
+
+	.projectTitleAndContent > p {
+		text-align: center;
+	}
+
+	.projectContentTitle {
+		text-align: center;
 	}
 }

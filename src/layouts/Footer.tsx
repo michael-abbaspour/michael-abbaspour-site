@@ -12,9 +12,9 @@ export default function Footer() {
 	return (
 		<footer className="primary-footer">
 			<div className="social-links-list">
-				<a href={socialLinks.linkedIn}>LinkedIn</a>
-				<a href={socialLinks.twitter}>Twitter</a>
-				<a href={socialLinks.github}>GitHub</a>
+				<a href={socialLinks.linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				<a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">Twitter</a>
+				<a href={socialLinks.github} target="_blank" rel="noopener noreferrer">GitHub</a>
 			</div>
 			<span className="copyright">&copy; 2023 Michael Abbaspour</span>
 		</footer>

@@ -23,7 +23,7 @@ export function ProjectListItem({ id, name, imageUrl, imageAltText, description,
 				<img src={imageUrl} alt={imageAltText} />
 			</picture>
 			<div className={styles.projectTitleAndContent}>
-				<h3>{name}</h3>
+				<h3 className={styles.projectContentTitle}>{name}</h3>
 				<ul className={styles.technologiesList}>
 					{technologies.map((tech) => {
 						return (
