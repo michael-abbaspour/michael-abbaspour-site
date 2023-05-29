@@ -35,6 +35,23 @@ Contact styles.
 	font-weight: bold;
 }
 
+.contactFormSubmitStatus {
+	text-align: center;
+	padding-top: 0.5rem;
+}
+
+.contactFormStatusSubmitting {
+	color: hsl(221, 79%, 61%);
+}
+
+.contactFormStatusSuccess {
+	color: hsl(146, 50%, 36%);
+}
+
+.contactFormStatusError {
+	color: hsl(0, 100%, 50%);
+}
+
 /**
 Mobile responsiveness.
  */
