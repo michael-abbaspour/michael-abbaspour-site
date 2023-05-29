@@ -6,12 +6,6 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "../../assets/styles/Contact.module.css";
 
-const emailSubmitParams = {
-	service_id: process.env.EMAIL_SERVICE_ID as string,
-	template_id: process.env.EMAIL_CONTACT_TEMPLATE_ID as string,
-	public_key: process.env.EMAIL_PUBLIC_KEY
-}
-
 export default function ContactForm() {
 	const form = useRef(null);
 	const [formStatus, setFormStatus] = useState<string | null>(null);
@@ -20,7 +14,7 @@ export default function ContactForm() {
 		e.preventDefault();
 		setFormStatus("submitting");
 
-		emailjs.sendForm(emailSubmitParams.service_id, emailSubmitParams.template_id, form.current!, emailSubmitParams.public_key)
+		emailjs.sendForm(process.env.EMAIL_SERVICE_ID as string, process.env.EMAIL_CONTACT_TEMPLATE_ID as string, form.current!, process.env.EMAIL_PUBLIC_KEY)
 			.then((result) => {
 				console.log(result.text);
 				setFormStatus("success")
