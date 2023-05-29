@@ -14,7 +14,7 @@ export default function ContactForm() {
 		e.preventDefault();
 		setFormStatus("submitting");
 
-		emailjs.sendForm(process.env.EMAIL_SERVICE_ID as string, process.env.EMAIL_CONTACT_TEMPLATE_ID as string, form.current!, process.env.EMAIL_PUBLIC_KEY)
+		emailjs.sendForm(process.env.VITE_EMAIL_SERVICE_ID as string, process.env.VITE_EMAIL_CONTACT_TEMPLATE_ID as string, form.current!, process.env.VITE_EMAIL_PUBLIC_KEY)
 			.then((result) => {
 				console.log(result.text);
 				setFormStatus("success")
